@@ -1,5 +1,9 @@
 # Atlas Visual
 
-Página de vendas do Atlas Visual Doces e Sobremesas. Publicação estática na Vercel a partir de `dist`. Código editável em `src` e imagens em `public`. Checkout Hotmart configurado.
+Página de vendas do Atlas Visual Doces e Sobremesas. Código editável em src, imagens em public e versão compilada em dist.
 
-Para atualizar: instalar dependências, executar `npm run build` e enviar também a pasta `dist`. Na Vercel, importar este repositório com diretório raiz `./`; vercel.json configura o deploy sem instalação de dependências.
+## Vercel
+
+Importar este repositório, branch main, diretório raiz ./ (não src). A configuração vercel.json publica a pasta dist sem instalar dependências ou recompilar. Para uma atualização futura, executar npm run build e incluir os arquivos atualizados de dist no commit.
+
+Checkout Hotmart e suporte configurados. A forma e prazo de entrega e a identificação do vendedor ainda precisam ser definidos na página.

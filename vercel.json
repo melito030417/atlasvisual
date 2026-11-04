@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "installCommand": "echo Using prebuilt Atlas site",
+  "buildCommand": "echo Atlas build already included",
+  "outputDirectory": "dist"
+}
