@@ -44,27 +44,27 @@ export const content = {
   },
   "gallery": [
     [
-      "/assets/receita-01.webp",
+      "/assets/receita-01-confeiteira.webp",
       "Chocotone com ganache"
     ],
     [
-      "/assets/receita-21.webp",
+      "/assets/receita-21-confeiteira.webp",
       "Brownie de chocolate"
     ],
     [
-      "/assets/receita-25.webp",
+      "/assets/receita-25-confeiteira.webp",
       "Pudim de leite condensado"
     ],
     [
-      "/assets/receita-26.webp",
+      "/assets/receita-26-confeiteira.webp",
       "Manjar de coco"
     ],
     [
-      "/assets/kit-K5.webp",
+      "/assets/kit-K5-confeiteira.webp",
       "Kit caneca, café e cookies"
     ],
     [
-      "/assets/kit-K8.webp",
+      "/assets/kit-K8-confeiteira.webp",
       "Kit pausa doce com cappuccino"
     ]
   ],

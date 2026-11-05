@@ -25,17 +25,17 @@ function SectionTitle({ children, lead }) {
 
 function ProductComposition({ compact = false }) {
   return <div className={`product-composition${compact ? ' product-composition--compact' : ''}`} aria-label="Composição com capa e páginas reais do Atlas">
-    <AtlasImage className="product-sheet product-sheet--left" src="/assets/receita-25.webp" alt="Receita de pudim" loading={compact ? 'lazy' : undefined}/>
-    <AtlasImage className="product-sheet product-sheet--middle" src="/assets/receita-21.webp" alt="Receita de brownie" loading="lazy"/>
-    <AtlasImage className="product-sheet product-sheet--right" src="/assets/kit-K5.webp" alt="Kit caneca, café e cookies" loading={compact ? 'lazy' : undefined}/>
-    <AtlasImage className="product-cover" src="/assets/capa.webp" alt="Capa real do Atlas Visual Doces e Sobremesas, Especial de Natal" loading={compact ? 'lazy' : undefined} fetchPriority={compact ? undefined : 'high'}/>
-    <div className="phone-mockup"><AtlasImage src="/assets/receita-26.webp" alt="Página real de manjar em uma moldura de celular" loading="lazy"/></div>
+    <AtlasImage className="product-sheet product-sheet--left" src="/assets/receita-25-confeiteira.webp" alt="Receita de pudim" loading={compact ? 'lazy' : undefined}/>
+    <AtlasImage className="product-sheet product-sheet--middle" src="/assets/receita-21-confeiteira.webp" alt="Receita de brownie" loading="lazy"/>
+    <AtlasImage className="product-sheet product-sheet--right" src="/assets/kit-K5-confeiteira.webp" alt="Kit caneca, café e cookies" loading={compact ? 'lazy' : undefined}/>
+    <AtlasImage className="product-cover" src="/assets/capa-confeiteira.webp" alt="Capa real do Atlas Visual Doces e Sobremesas, Especial de Natal" loading={compact ? 'lazy' : undefined} fetchPriority={compact ? undefined : 'high'}/>
+    <div className="phone-mockup"><AtlasImage src="/assets/receita-26-confeiteira.webp" alt="Página real de manjar em uma moldura de celular" loading="lazy"/></div>
     <div className="quantity-seal"><strong>26</strong><span>RECEITAS<br/>ILUSTRADAS</span></div>
   </div>;
 }
 
 function CollectionComposition({ pitch = false }) {
- const items = pitch ? [['kit-K5','Kit caneca, café e cookies'],['kit-K8','Kit com sobremesas e cappuccino']] : [['receita-21','Brownie'],['receita-25','Pudim'],['capa','Capa do Atlas'],['receita-26','Manjar'],['kit-K5','Kit para presentear']];
+ const items = pitch ? [['kit-K5-confeiteira','Kit caneca, café e cookies'],['kit-K8-confeiteira','Kit com sobremesas e cappuccino']] : [['receita-21-confeiteira','Brownie'],['receita-25-confeiteira','Pudim'],['capa-confeiteira','Capa do Atlas'],['receita-26-confeiteira','Manjar'],['kit-K5-confeiteira','Kit para presentear']];
  return <div className={pitch ? 'atlas-pair' : 'atlas-collection'}>{items.map(([src,alt])=><AtlasImage key={src} src={`/assets/${src}.webp`} alt={alt} loading="lazy"/>)}</div>;
 }
 
@@ -196,7 +196,7 @@ export default function App() {
       </div></section>
 
       <section className="section mechanism"><div className="content content--1120 section-flow">
-        <SectionTitle lead={content.mechanismSection.lead}>{content.mechanismSection.title}</SectionTitle><button className="mechanism-page preview-open" onClick={() => setPreview({src:"/assets/receita-25.webp",title:"Pudim de leite condensado"})} aria-label="Ampliar receita de pudim"><AtlasImage src="/assets/receita-25.webp" alt="Página inteira de pudim, com ingredientes e seis etapas ilustradas" loading="lazy"/></button>
+        <SectionTitle lead={content.mechanismSection.lead}>{content.mechanismSection.title}</SectionTitle><button className="mechanism-page preview-open" onClick={() => setPreview({src:"/assets/receita-25-confeiteira.webp",title:"Pudim de leite condensado"})} aria-label="Ampliar receita de pudim"><AtlasImage src="/assets/receita-25-confeiteira.webp" alt="Página inteira de pudim, com ingredientes e seis etapas ilustradas" loading="lazy"/></button>
         <div className="mechanism-grid">{content.mechanism.map(([title,text],index)=>{const Icon=mechanismIcons[index];return <article key={title}><span className="mechanism-icon"><Icon size={25}/></span><h3>{title}</h3><p>{text}</p></article>})}</div>
         <p className="mechanism-close">{content.mechanismClose}</p><CTA/>
       </div></section>
